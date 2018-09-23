@@ -76,3 +76,83 @@ git commit -am "my notes about this commit message"
 
 Submits / uploads all the commited changes to the git repository. 
 
+
+
+### log
+
+Displays all the previous commits in my local machine along with their git hash. A git hash is an automatically generated unique "id" attached to each commit.
+
+```
+git log
+
+commit b5909a77c344a4cbf012e2714b30a400ed17fea8 (HEAD -> master, origin/master)
+Author: Tiana Mamaril <tianamamaril@Tianas-MacBook-Pro.local>
+Date:   Sun Sep 23 16:33:48 2018 -0700
+
+    update README.md: noted usage of git commit -am
+
+commit 9560b4319537de9f41120faa92e6fec2ca4529ad
+Author: Tiana Mamaril <tianamamaril@Tianas-MacBook-Pro.local>
+Date:   Sun Sep 23 16:28:55 2018 -0700
+
+    update README.md: noted commit and push commands
+
+commit 6add78b0ec03319f113f2566d933854fca8913ee
+Author: Tiana Mamaril <tianamamaril@Tianas-MacBook-Pro.local>
+Date:   Sun Sep 23 16:19:23 2018 -0700
+
+    added README.md
+(END)
+```
+
+
+
+### diff
+
+Shows the difference for all the files or a specific file / folder since the last commit where green (+) are lines added and where red (-) are lines deleted. 
+
+
+
+> If all the changes are too long to fit on one page, press space to scroll down.
+
+```
+diff --git a/README.md b/README.md
+index b88bac8..d0d12c9 100644
+--- a/README.md
++++ b/README.md
+@@ -11,16 +11,6 @@ git --help // will display all the git commands available
+ git clone --help // specific to clone command
+ ```
+
+-### clone
+-
+-Will download a repository to my local machine at the current path (where you are in the terminal).
+-
+-```
+-git clone https://github.com/tianaraemamaril/learn-git.git
+-```
+-
+-Cloned a copy of the git repository to the computer.
+-
+ ### status
+
+ Displays paths that have differences between the index file and the current HEAD commit.
+@@ -76,3 +66,37 @@ git commit -am "my notes about this commit message"
+
+ Submits / uploads all the commited changes to the git repository.
+
++
++
++### log
++
++Displays all the previous commits in my local machine along with their git hash. A git hash is an automatically generated unique "id" attached to each commit.
++
++```
++git log
++
++commit b5909a77c344a4cbf012e2714b30a400ed17fea8 (HEAD -> master, origin/master)
++Author: Tiana Mamaril <tianamamaril@Tianas-MacBook-Pro.local>
++Date:   Sun Sep 23 16:33:48 2018 -0700
++
+```
+

@@ -21,8 +21,6 @@ git clone https://github.com/tianaraemamaril/learn-git.git
 
 Cloned a copy of the git repository to the computer.
 
-
-
 ### status
 
 Displays paths that have differences between the index file and the current HEAD commit.
@@ -32,6 +30,10 @@ Shows the difference between what I have in my local computer compared to what i
 #### untracked files
 
 Files that currently exist in my local machine but not in the git repository. 
+
+#### tracked files
+
+Files that have already been commited and have been modified.
 
 ### add
 
@@ -43,5 +45,26 @@ git add README.md
 
 
 
+### commit
 
+Leaves a message attached to the files that are currently staged.
+
+```
+git commit -m "Notes under 50 characters"
+```
+
+Example of a good commit message
+
+```
+git commit -m "<verb> <scope>: <message>"
+git commit -m "add readme: initial notes about git"
+```
+
+> YOU CAN'T LEAVE A COMMIT MESSAGE WITHOUT FIRST USING `GIT ADD`. ALL COMMIT MESSAGES ARE ATTACHED TO STAGED FILES
+
+
+
+### push
+
+Submits / uploads all the commited changes to the git repository. 
 

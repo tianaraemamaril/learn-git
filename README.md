@@ -60,9 +60,17 @@ git commit -m "<verb> <scope>: <message>"
 git commit -m "add readme: initial notes about git"
 ```
 
-> YOU CAN'T LEAVE A COMMIT MESSAGE WITHOUT FIRST USING `GIT ADD`. ALL COMMIT MESSAGES ARE ATTACHED TO STAGED FILES
+> YOU CAN'T LEAVE A COMMIT MESSAGE WITHOUT FIRST USING `GIT ADD`. ALL COMMIT MESSAGES ARE ATTACHED TO STAGED FILES.
 
 
+
+For files that are already tracked (not new files), you can skip `git add`.
+
+```
+git commit -am "my notes about this commit message"
+```
+
+`-am` will add ALL the files that have been modified and will attach the commit message to all of them.
 
 ### push
 

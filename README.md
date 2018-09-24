@@ -132,3 +132,28 @@ M	README.md
 Switched to branch 'new-branch'
 ```
 
+
+
+### merge
+
+Merges current branch to specified branch.
+
+```
+➜  learn-git git:(new-branch) git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+➜  learn-git git:(master) git merge new-branch
+Updating c905f5a..367a541
+Fast-forward
+ README.md | 22 +++++++++++++++++++++-
+ 1 file changed, 21 insertions(+), 1 deletion(-)
+➜  learn-git git:(master)
+```
+
+
+
+### reset
+
+Resets to a specific commit (first five characters of git) if specified, otherwise, resets to the last commit.
+
+If there are changes and you don't care to lose them, add ` --hard` flag. 

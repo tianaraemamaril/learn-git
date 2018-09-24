@@ -112,3 +112,23 @@ Date:   Sun Sep 23 16:19:23 2018 -0700
 Shows the difference for all the files or a specific file / folder since the last commit where green (+) are lines added and where red (-) are lines deleted. 
 
 If all the changes are too long to fit on one page, press space to scroll down.
+
+
+
+### checkout 
+
+Switches to an existing branch or creates a new branch with `-b` flag.
+
+``` 
+➜  learn-git git:(master) git checkout -b new-branch
+M	README.md
+Switched to a new branch 'new-branch'
+➜  learn-git git:(new-branch) ✗ git checkout master
+M	README.md
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+➜  learn-git git:(master) ✗ git checkout new-branch
+M	README.md
+Switched to branch 'new-branch'
+```
+
